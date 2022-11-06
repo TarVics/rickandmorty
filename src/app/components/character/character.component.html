@@ -1,0 +1,32 @@
+<div class="character">
+  <div class="image">
+    <img [src]="character.image" [alt]="character.name"/>
+  </div>
+  <div class="info">
+    <div class="section">
+      <h2>{{character.name}}</h2>
+      <div class="status">
+            <span [class]="character.status === 'Alive' ? 'status__icon__green' :
+        character.status === 'Dead' ? 'status__icon__red' : 'status__icon__gray'"></span>
+        {{character.status}}
+        </div>
+    </div>
+    <div class="section">
+      <span class="text-gray">Species:</span>
+      {{character.species + (character.type ? ' (' + character.type + ')': '')}}
+    </div>
+
+    <div class="section">
+      <span class="text-gray">Gender:</span>
+      {{character.gender}}
+    </div>
+    <div class="section">
+      <span class="text-gray">Origin location:</span>
+      {{character.origin.name}}
+    </div>
+    <div class="section">
+      <span class="text-gray">Last known location:</span>
+      {{character.location.name}}
+    </div>
+  </div>
+</div>

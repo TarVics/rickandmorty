@@ -1,0 +1,8 @@
+.main-header {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  background: rgb(60, 62, 68) none repeat scroll 0 0;
+  color: #f3d79f;
+}

@@ -1,0 +1,11 @@
+<div class="characters-header">
+  <div class="characters-link" (click)="goBack()"><mat-icon>arrow_back</mat-icon> Back</div>
+  <div class="characters-info" *ngIf="episode">
+    <div class="characters-title">{{episode.name}}</div>
+    <div>
+      <span class="characters-caption">episode</span><span>{{episode.episode}}</span>
+      <span class="characters-caption">, air date</span><span>{{episode.air_date}}</span>
+    </div>
+  </div>
+  <div class="characters-link">&nbsp;</div>
+</div>

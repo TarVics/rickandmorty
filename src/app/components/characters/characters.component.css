@@ -1,0 +1,11 @@
+.characters {
+  padding: 30px 50px;
+  max-width: 1920px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  -moz-box-pack: center;
+  -moz-box-align: center;
+  background-color: #464c5b;
+}

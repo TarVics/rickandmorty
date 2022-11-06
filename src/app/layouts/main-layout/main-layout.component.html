@@ -1,0 +1,8 @@
+<app-main-header></app-main-header>
+<mat-progress-bar *ngIf="isLoading; else isNotLoading" mode="indeterminate"></mat-progress-bar>
+<router-outlet></router-outlet>
+<ng-template #isNotLoading>
+  <mat-progress-bar mode="determinate"></mat-progress-bar>
+</ng-template>
+
+<app-scroll-top></app-scroll-top>
